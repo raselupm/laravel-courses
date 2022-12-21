@@ -29,6 +29,12 @@ class Course extends Model
         return $this->belongsToMany(Series::class, 'course_series', 'course_id', 'series_id');
     }
 
+    public function reviews() {
+        return $this->hasMany(Review::class);
+    }
+
+
+
     public function duration($value) {
         if($value == 1) {
             return '5-10 hours';
