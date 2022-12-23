@@ -33,18 +33,22 @@ class DatabaseSeeder extends Seeder
         $series = [
             [
                 'name' => 'PHP',
+                'slug' => 'php',
                 'image' => 'https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png',
             ],
             [
                 'name' => 'JavaScript',
+                'slug' => 'javascript',
                 'image' => 'https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png',
             ],
             [
                 'name' => 'WordPress',
+                'slug' => 'wordpress',
                 'image' => 'https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png',
             ],
             [
-                'name' => 'Laravel',
+                'name' => 'Vue.js',
+                'slug' => 'vuejs',
                 'image' => 'https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png',
             ]
         ];
@@ -52,6 +56,7 @@ class DatabaseSeeder extends Seeder
             Series::create([
                 'name' => $item['name'],
                 'image' => $item['image'],
+                'slug' => $item['slug'],
             ]);
         }
 

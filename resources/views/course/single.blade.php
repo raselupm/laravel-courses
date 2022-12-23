@@ -176,7 +176,7 @@
                             <hr class="mt-5 border-gray-200">
                             <div class="mt-8 flex flex-wrap gap-2.5">
                                 @foreach($course->topics as $topic)
-                                <a href="{{route('topics', $topic->slug)}}" class="relative inline-flex items-center rounded-full border border-gray-300 px-3 py-1.5 hover:bg-gray-100">
+                                <a href="{{route('archive', ['topic', $topic->slug])}}" class="relative inline-flex items-center rounded-full border border-gray-300 px-3 py-1.5 hover:bg-gray-100">
                                     <div class="absolute flex flex-shrink-0 items-center justify-center">
                                         <span class="h-1.5 w-1.5 rounded-full bg-rose-500" aria-hidden="true"></span>
                                     </div>
